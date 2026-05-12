@@ -11,6 +11,9 @@ further_reading:
   - link: "/code_coverage/configuration"
     tag: "Documentation"
     text: "Configure Code Coverage"
+  - link: "/code_coverage/dashboards"
+    tag: "Documentation"
+    text: "Build dashboards on Code Coverage data"
 ---
 
 ## Overview
