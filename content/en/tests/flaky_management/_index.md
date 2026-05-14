@@ -156,23 +156,24 @@ This method avoids unnecessary CI failures and saves developer time.
 
 If a test inside the grace period flakes and the commit doesn't contain the fix, Datadog tags the test run event with `@test.test_management.flaky_fix_missing:true`.
 
-## AI-powered flaky test fixes
+## Bits AI-powered flaky test fixes
 
-Bits AI Dev Agent can automatically diagnose and fix flaky tests that have been detected by Test Optimization. When a flaky test is identified, Bits AI analyzes the test failure patterns and generates production-ready fixes that can be submitted as GitHub pull requests.
+After Test Optimization detects a flaky test, [Bits AI Dev Agent][16] can automatically diagnose and fix it. The Dev Agent analyzes the test's failure patterns and generates production-ready code changes. You can then create a GitHub pull request directly from the Dev Agent's suggestions.
 
-For Bits AI to create a fix, the flaky test must meet the following criteria:
+For Bits AI Dev Agent to create a fix, the flaky test must meet the following criteria:
 - **Failure rate**: At least 5%
 - **Wasted time**: At least 2 hours
 - **Failed pipelines**: At least 2 pipelines
 - **Branch**: Must have flaked in the default branch
+- **Failed executions**: Must have at least 1 failed execution that includes both `@error.message` and `@test.source.file` tags
 
 {{< img src="tests/bits_ai_flaky_test_fixes-2.png" alt="Bits AI Dev Agent displaying a proposed fix for a flaky test" style="width:100%;" >}}
 
 ### Setup
 
-To enable AI-powered flaky test fixes, enable Bits AI Dev Agent for Test Optimization by following the setup instructions in the [Bits AI Dev Agent documentation][16]. Bits AI Dev Agent automatically create fixes for flaky tests detected by Test Optimization.
+To allow Bits AI Dev Agent to suggest flaky test fixes, enable Bits AI Dev Agent for Test Optimization by following the setup instructions in the [Bits AI Dev Agent documentation][16]. 
 
-<div class="alert alert-info">A flaky test must have at least one failed execution that includes both <code>@error.message</code> and <code>@test.source.file</code> tags to be eligible for a fix. Generating a fix may take some time.</div>
+After you have enabled Bits AI Dev Agent, when viewing a flaky test, click **Generate fix**.
 
 ## AI-powered flaky test categorization
 
