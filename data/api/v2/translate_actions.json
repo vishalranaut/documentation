@@ -1392,6 +1392,12 @@
     "request_description": "",
     "request_schema_description": "Request used to update an application key."
   },
+  "DisableCustomerOrg": {
+    "description": "Disable the Datadog organization associated with the authenticated user or API key.\nThe request body uses JSON:API format. If `org_id` or `org_uuid` are supplied, they\nmust match the authenticated org or the request is rejected. Successful calls disable\nthe org and return the resulting state from the downstream service. Requires the\n`org_management` permission.",
+    "summary": "Disable the authenticated customer organization",
+    "request_description": "",
+    "request_schema_description": "Request payload for disabling the authenticated customer organization."
+  },
   "DeleteDashboardListItems": {
     "description": "Delete dashboards from an existing dashboard list.",
     "summary": "Delete items from a dashboard list",
