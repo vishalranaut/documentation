@@ -13993,6 +13993,42 @@ menu:
         unstable:
           - v2
         order: 9
+    - name: Query aggregated waterfall
+      url: '#query-aggregated-waterfall'
+      identifier: rum-query-aggregated-waterfall
+      parent: rum
+      generated: true
+      params:
+        versions:
+          - v2
+        operationids:
+          - QueryAggregatedWaterfall
+        unstable: []
+        order: 10
+    - name: Query aggregated signals and problems
+      url: '#query-aggregated-signals-and-problems'
+      identifier: rum-query-aggregated-signals-and-problems
+      parent: rum
+      generated: true
+      params:
+        versions:
+          - v2
+        operationids:
+          - QueryAggregatedSignalsProblems
+        unstable: []
+        order: 12
+    - name: Query aggregated long tasks
+      url: '#query-aggregated-long-tasks'
+      identifier: rum-query-aggregated-long-tasks
+      parent: rum
+      generated: true
+      params:
+        versions:
+          - v2
+        operationids:
+          - QueryAggregatedLongTasks
+        unstable: []
+        order: 11
     - name: Search RUM events
       url: '#search-rum-events'
       identifier: rum-search-rum-events
