@@ -98,9 +98,11 @@ There are multiple ways to open Bits Assistant in the Datadog web application:
 Bits Assistant is available on iOS v5.8.4+.
 </div>
 
+Ask Bits questions about your system or active incident. Bits has context on Datadog public documentation, telemetry, and ownership.
+
 1. [Download the mobile app and log in][2].
 2. On the home screen, tap {{< ui >}}Bits Assistant{{< /ui >}}.
-3. Start chatting with Bits Assistant in chat or voice mode.
+3. Start chatting with Bits Assistant by voice or text.
 {{< img src="bits_ai/getting_started/bitsai_mobile_app.PNG" alt="View of the Mobile App Home dashboard with Bits AI" style="width:40%;" >}}
 
 ### Slack
