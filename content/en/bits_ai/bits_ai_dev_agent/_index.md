@@ -7,6 +7,9 @@ further_reading:
   - link: "https://www.datadoghq.com/blog/bitsai-dev-agent-code-security"
     tag: "Blog"
     text: "Introducing Bits AI Dev Agent for Code Security"
+  - link: "/bits_ai/ai_credits/"
+    tag: "Documentation"
+    text: "AI Credits"
 ---
 
 ## Overview
