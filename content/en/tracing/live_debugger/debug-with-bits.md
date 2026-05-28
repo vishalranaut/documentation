@@ -55,7 +55,7 @@ Logpoints created by Bits follow the same rules as manually created logpoints: t
 1. In the Debug with Bits chatbox, describe the issue you want to investigate. Select the target service and environment before submitting the prompt.  
 1.  Bits evaluates the connected source code repository, analyze other available signals, and ask follow up questions to form a hypothesis.
 
-1. Bits will configure and activate up to 5 logpoints at relevant code locations to capture the specific data it needs.
+1. Bits configures and activates up to 5 logpoints at relevant code locations to capture the specific data it needs.
 1. Bits retrieves and analyzes the logs and variable snapshots from the active logpoints to validate its hypothesis and formulate its response.
 1. Review the response from Bits and (optionally) drill into the details of the logpoints it created, specific snapshots or log events it highlights, and - when relevant - the code fix it suggests. Reply to the chat to continue the investigation as needed.
 1. Bits typically disables the logpoints it creates as soon as it has retrieved the data it needs. Also, logpoints auto-expire after the session's set time period. Disable logpoints at any time by asking Bits or clicking the Disable button on an individual logpoint or the session.
