@@ -19,11 +19,11 @@ Debug with Bits is in Preview. Request access to join the waiting list.
 
 ## Overview
 
-Debug with Bits lets you use [Bits AI Dev Agent][5] to inspect running services through a conversational interface. Instead of manually navigating the Live Debugger UI, you can describe what you want to investigate, and Bits places logpoints, retrieves captured data, and helps you interpret results.
+Debug with Bits lets you use [Bits AI Dev Agent][5] to inspect running services through a conversational interface. Instead of manually navigating the Live Debugger UI, you can describe what you want to investigate. Bits will place logpoints, retrieve captured variable snapshots, and help you interpret results.
 
 {{< img src="tracing/live_debugger/debug-with-bits-coupon-session.png" alt="Bits AI Dev Agent debugging session showing root cause analysis and a logpoint placed in the discount calculation code" style="width:100%;" >}}
 
-All debugging activity runs through [Live Debugger][1], so the same [permissions][2], rate limits, auto-expiry rules, and [sensitive data scrubbing][3] apply regardless of whether you create logpoints manually or through Bits.
+All debugging activity runs through [Live Debugger][1], so the same [permissions][2], rate limits, auto-expiry rules, and [sensitive data scrubbing][3] apply whether you create logpoints manually or through Bits.
 
 ## Requirements
 
@@ -32,6 +32,8 @@ Before using Debug with Bits:
 - [Live Debugger][1] must be enabled for the target service. See [Requirements and setup][1] for details.
 - Your account needs the [permissions][2] required to use Live Debugger, including read, write, and variable-capture permissions for the target environment.
 - [Bits AI Dev Agent][5] must be available in your organization.
+- [Source Code Integration][6] must be set up for the target service.
+
 
 ## Available actions
 
@@ -45,16 +47,18 @@ Bits can perform the following Live Debugger actions during a debugging session:
 | Disable logpoints | Disable all logpoints in a session. |
 | Retrieve snapshot data | Fetch captured variable values and execution context from an active logpoint. |
 
-Logpoints created by Bits follow the same rules as manually created logpoints: they are read-only, non-blocking, and auto-expire after a configurable duration between 10 minutes and 48 hours (default: 60 minutes). Bits cannot modify application state or alter control flow.
+Logpoints created by Bits follow the same rules as manually created logpoints: they are read-only, non-blocking, and auto-expire after a configurable duration between 10 minutes and 2 days (default: 60 minutes). Bits cannot modify application state or alter control flow.
 
 ## Get started
 
 1. Navigate to the [Live Debugger page][4].
-2. Open the Bits AI Dev Agent chat and describe the issue you want to investigate.
-3. Bits identifies the relevant service and environment and proposes logpoint locations.
-4. Review and confirm the proposed logpoints. Bits creates them and monitors for captured data.
-5. When Bits retrieves snapshot data, review the captured variable values and execution context in the chat.
-6. Ask Bits to disable the session, or let the logpoints expire automatically.
+1. In the Debug with Bits chatbox, describe the issue you want to investigate. Select the target service and environment before submitting the prompt.  
+1.  Bits will evaluate the connected source code repository, analyze other available signals, and ask follow up questions to form a hypothesis.
+
+1. Bits will configure and activate up to 5 logpoints at relevant code locations to capture the specific data it needs.
+1. Bits retrieves and analyzes the logs and variable snapshots from the active logpoints to validate its hypothesis and formulate its response.
+1. Review the response from Bits and (optionally) drill into the details of the logpoints it created, specific snapshots or log events it highlights, and - when relevant - the code fix it suggests. Reply to the chat to continue the investigation as needed.
+1. Bits typically disables the logpoints it creates as soon as it has retrieved the data it needs. Also, logpoints auto-expire after the session's set time period. Disable logpoints at any time by asking Bits or clicking the Disable button on an individual logpoint or the session.
 
 ## Notes
 
@@ -73,3 +77,4 @@ Logpoints created by Bits follow the same rules as manually created logpoints: t
 [3]: /dynamic_instrumentation/sensitive-data-scrubbing/
 [4]: https://app.datadoghq.com/debugging/sessions
 [5]: /bits_ai/bits_ai_dev_agent/
+[6]: /source_code/source-code-management/
