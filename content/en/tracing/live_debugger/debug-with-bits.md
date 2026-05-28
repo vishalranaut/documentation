@@ -57,7 +57,7 @@ Logpoints created by Bits follow the same rules as manually created logpoints: t
 
 1. Bits configures and activates up to 5 logpoints at relevant code locations to capture the specific data it needs.
 1. Bits retrieves and analyzes the logs and variable snapshots from the active logpoints to validate its hypothesis and formulate its response.
-1. Review the response from Bits and (optionally) drill into the details of the logpoints it created, specific snapshots or log events it highlights, and - when relevant - the code fix it suggests. Reply to the chat to continue the investigation as needed.
+1. Review the response from Bits and (optionally) drill into the details of the logpoints, captured data, and any code fixes suggested. Reply to the chat to continue the investigation as needed.
 1. Bits typically disables the logpoints it creates as soon as it has retrieved the data it needs. Also, logpoints auto-expire after the session's set time period. Disable logpoints at any time by asking Bits or clicking the Disable button on an individual logpoint or the session.
 
 ## Notes
