@@ -13,7 +13,7 @@ further_reading:
   text: "Sensitive Data Scrubbing"
 ---
 
-{{< beta-callout url="https://www.datadoghq.com/product-preview/live-debugger/" >}}
+{{< beta-callout url="https://www.datadoghq.com/product-preview/debug-with-bits/" >}}
 Debug with Bits is in Preview. Request access to join the waiting list.
 {{< /beta-callout >}}
 
