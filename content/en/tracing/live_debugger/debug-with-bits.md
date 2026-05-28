@@ -21,7 +21,6 @@ Debug with Bits is in Preview. Request access to join the waiting list.
 
 Debug with Bits lets you use [Bits AI Dev Agent][5] to inspect running services through a conversational interface. Instead of manually navigating the Live Debugger UI, you can describe what you want to investigate. Bits places logpoints, retrieves captured variable snapshots, and helps you interpret results.
 
-
 All debugging activity runs through [Live Debugger][1], so the same [permissions][2], rate limits, auto-expiry rules, and [sensitive data scrubbing][3] apply.
 
 ## Requirements
