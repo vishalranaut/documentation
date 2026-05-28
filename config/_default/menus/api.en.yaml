@@ -17558,6 +17558,22 @@ menu:
           - ListStatusPages
         unstable: []
         order: 3
+    - name: Stegadography
+      url: /api/latest/stegadography/
+      identifier: stegadography
+      generated: true
+    - name: Get widgets from an image
+      url: '#get-widgets-from-an-image'
+      identifier: stegadography-get-widgets-from-an-image
+      parent: stegadography
+      generated: true
+      params:
+        versions:
+          - v2
+        operationids:
+          - GetStegadographyWidgets
+        unstable: []
+        order: 1
     - name: Storage Management
       url: /api/latest/storage-management/
       identifier: storage-management

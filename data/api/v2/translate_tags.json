@@ -427,6 +427,10 @@
     "name": "Status Pages",
     "description": "Manage your status pages and communicate service disruptions to stakeholders via Datadog's API. See the [Status Pages documentation](https://docs.datadoghq.com/incident_response/status_pages/) for more information."
   },
+  "stegadography": {
+    "name": "Stegadography",
+    "description": "Extract watermarks embedded in dashboard screenshots to retrieve cached widget state."
+  },
   "storage-management": {
     "name": "Storage Management",
     "description": "Enable Storage Management for S3 buckets, GCS buckets, and Azure containers. Each configuration registers the destination that holds inventory reports for the storage being monitored."
