@@ -53,7 +53,7 @@ Logpoints created by Bits follow the same rules as manually created logpoints: t
 
 1. Navigate to the [Live Debugger page][4].
 1. In the Debug with Bits chatbox, describe the issue you want to investigate. Select the target service and environment before submitting the prompt.  
-1.  Bits evaluates the connected source code repository, analyze other available signals, and ask follow up questions to form a hypothesis.
+1.  Bits analyzes relevant code paths in the connected source code repository and may ask follow up questions to form a hypothesis.
 
 1. Bits configures and activates up to 5 logpoints at relevant code locations to capture the specific data it needs.
 1. Bits retrieves and analyzes the logs and variable snapshots from the active logpoints to validate its hypothesis and formulate its response.
