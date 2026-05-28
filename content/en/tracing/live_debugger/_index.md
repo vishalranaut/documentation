@@ -84,6 +84,8 @@ The following permissions are required to use Live Debugger:
   - **Dynamic Instrumentation Write Configuration** (`debugger_write`) - Required to create or modify debug logs in any environment.
   - **Dynamic Instrumentation Write Pre-Prod** (`debugger_write_preprod`) - Required to create or modify debug logs in known pre-production environments only (such as staging or QA).
 - **Dynamic Instrumentation Capture Variables** (`debugger_capture_variables`) - Required to use the **Capture method parameters and local variables** option.
+- **Logs Read Data** (`logsreaddata`) - Required to view debug logs and snapshots.
+- **Logs Read Index Data** (`logsreadindexdata`) - Required to view debug logs and snapshots.
 
 For more information about roles and how to assign roles to users, see [Role Based Access Control][21].
 
