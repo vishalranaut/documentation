@@ -13657,6 +13657,62 @@ menu:
           - ListDevices
         unstable: []
         order: 1
+    - name: OAuth2 Client Public
+      url: /api/latest/oauth2-client-public/
+      identifier: oauth2-client-public
+      generated: true
+    - name: Register an OAuth2 client
+      url: '#register-an-oauth2-client'
+      identifier: oauth2-client-public-register-an-oauth2-client
+      parent: oauth2-client-public
+      generated: true
+      params:
+        versions:
+          - v2
+        operationids:
+          - RegisterOAuthClient
+        unstable:
+          - v2
+        order: 1
+    - name: Upsert an OAuth2 client scopes restriction
+      url: '#upsert-an-oauth2-client-scopes-restriction'
+      identifier: oauth2-client-public-upsert-an-oauth2-client-scopes-restriction
+      parent: oauth2-client-public
+      generated: true
+      params:
+        versions:
+          - v2
+        operationids:
+          - UpsertScopesRestriction
+        unstable:
+          - v2
+        order: 3
+    - name: Get an OAuth2 client scopes restriction
+      url: '#get-an-oauth2-client-scopes-restriction'
+      identifier: oauth2-client-public-get-an-oauth2-client-scopes-restriction
+      parent: oauth2-client-public
+      generated: true
+      params:
+        versions:
+          - v2
+        operationids:
+          - GetScopesRestriction
+        unstable:
+          - v2
+        order: 2
+    - name: Delete an OAuth2 client scopes restriction
+      url: '#delete-an-oauth2-client-scopes-restriction'
+      identifier: oauth2-client-public-delete-an-oauth2-client-scopes-restriction
+      parent: oauth2-client-public
+      generated: true
+      params:
+        versions:
+          - v2
+        operationids:
+          - DeleteScopesRestriction
+        unstable:
+          - v2
+        order: 4
     - name: OCI Integration
       url: /api/latest/oci-integration/
       identifier: oci-integration
@@ -14812,6 +14868,18 @@ menu:
           - CreateReferenceTableUpload
         unstable: []
         order: 1
+    - name: List rows
+      url: '#list-rows'
+      identifier: reference-tables-list-rows
+      parent: reference-tables
+      generated: true
+      params:
+        versions:
+          - v2
+        operationids:
+          - ListReferenceTableRows
+        unstable: []
+        order: 11
     - name: Upsert rows
       url: '#upsert-rows'
       identifier: reference-tables-upsert-rows
